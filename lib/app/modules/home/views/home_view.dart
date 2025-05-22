@@ -151,19 +151,13 @@ class HomeView extends GetView<HomeController> {
           ],
         ),
       ),
-      floatingActionButton: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          FloatingActionButton(
-            onPressed: () {
-              context.push(Routes.NOTE, extra: null);
-            },
-            backgroundColor: Colors.black,
-            elevation: 0,
-            child: Icon(Icons.add, color: Colors.white, size: 28.sp),
-          ),
-          Gap(40.h),
-        ],
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          context.push(Routes.NOTE, extra: null);
+        },
+        backgroundColor: Colors.black,
+        elevation: 0,
+        child: Icon(Icons.add, color: Colors.white, size: 28.sp),
       ),
     );
   }
