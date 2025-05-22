@@ -17,7 +17,6 @@ class AppPages {
   AppPages._();
 
   static GoRouter router = GoRouter(
-    navigatorKey: rootNavigatorKey,
     initialLocation: Routes.SPLASH,
     routes: [
       GoRoute(
