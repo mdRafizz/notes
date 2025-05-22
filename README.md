@@ -28,7 +28,7 @@ A simple note-taking app built with Flutter, following clean architecture, using
 - **GoRouter** - for navigation
 - **Clean Architecture** - for code structure
 
-  # To use this app, simply connect it with Firebase and run it.
+### To use this app, simply connect it with Firebase and run it.
 
 
 
