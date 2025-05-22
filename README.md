@@ -1,16 +1,39 @@
-# note
+# Flutter Notes App 📝
 
-A new Flutter project.
+A simple note-taking app built with Flutter, following clean architecture, using Firebase for backend, GetX for state management, and GoRouter for navigation.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+1. **Splash Screen**  
+   - Shows only the first time the app is opened.
 
-A few resources to get you started if this is your first Flutter project:
+2. **Login Page**  
+   - Email & password-based login using Firebase Authentication.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. **Registration Page**  
+   - Register new users with name, email, and password.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. **Home Page**  
+   - Displays a list of user-created notes.
+   - Floating action button for adding new notes.
+
+5. **Add Notes Page**  
+   - Create a new note with title and description.
+
+## Tech Stack
+
+- **Flutter**
+- **Firebase (Authentication & Firestore)**
+- **GetX** - for state management
+- **GoRouter** - for navigation
+- **Clean Architecture** - for code structure
+
+  # To use this app, simply connect it with Firebase and run it.
+
+
+
+
+
+
+
+
