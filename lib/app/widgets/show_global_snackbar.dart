@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../main.dart';
+import '../data/enums/snackbar_type.dart';
 
 
 void showGlobalSnackbar(String message, SnackbarType type) {
