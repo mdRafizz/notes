@@ -20,7 +20,7 @@ void main() async {
   runApp(const MyApp());
 }
 
-final GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>();
+final GlobalKey<ScaffoldMessengerState> rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -30,7 +30,8 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: Size(402, 874),
       builder: (context, child) {
-        return MaterialApp.router(
+        return GetMaterialApp.router(
+          scaffoldMessengerKey: rootScaffoldMessengerKey,
           theme: ThemeData(
             fontFamily: 'ferdoka',
             scaffoldBackgroundColor: const Color(0xfffafafa),
