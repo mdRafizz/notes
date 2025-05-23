@@ -56,8 +56,12 @@ class NoteController extends GetxController {
     try {
       isLoading(true);
       await _repo.addNote(note);
-
       onSuccess();
+      Future.delayed(const Duration(seconds: 1),(){
+        if (Get.isRegistered<NoteController>()) {
+          Get.delete<NoteController>();
+        }
+      });
     } catch (e) {
       print(e);
 
@@ -87,8 +91,13 @@ class NoteController extends GetxController {
     try {
       isLoading(true);
       await _repo.updateNote(noteModel!.id, note);
-
       onSuccess();
+
+      Future.delayed(const Duration(seconds: 1),(){
+        if (Get.isRegistered<NoteController>()) {
+          Get.delete<NoteController>();
+        }
+      });
     } catch (e) {
       print(e);
 

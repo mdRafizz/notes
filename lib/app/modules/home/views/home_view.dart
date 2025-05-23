@@ -12,6 +12,7 @@ import 'package:note/app/routes/app_pages.dart';
 import 'package:note/app/widgets/reusable_text1.dart';
 
 import '../../../data/model/note_model.dart';
+import '../../note/controllers/note_controller.dart';
 
 class HomeView extends GetView<HomeController> {
   const HomeView({super.key});
@@ -153,7 +154,8 @@ class HomeView extends GetView<HomeController> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          context.push(Routes.NOTE, extra: null);
+          GoRouter.of(context).push
+            (Routes.NOTE, extra: null);
         },
         backgroundColor: Colors.black,
         elevation: 0,

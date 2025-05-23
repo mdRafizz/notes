@@ -18,7 +18,7 @@ class NoteCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        context.push(Routes.NOTE, extra: note);
+        GoRouter.of(context).push(Routes.NOTE, extra: note);
       },
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 21.h),
